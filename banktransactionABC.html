@@ -1,0 +1,184 @@
+<html>
+<head>
+<title> ABC Bank</title>
+<style>
+    table{
+        margin:  0px 0px 0px 500px;
+        border-collapse: collapse;
+        width:300px;
+        height: 30px;
+       
+    }
+    body{
+        background-image: url('banklogo.png');
+        background-attachment: fixed;
+       
+        background-size: 1400px 250px;
+ background-repeat:no-repeat;
+    }
+
+    
+    
+    h1{
+        color: red;
+        margin:  0px 0px 0px 800px;
+    }
+    #a{
+        color: white;
+        font-size:xx-large;
+        margin:  0px 0px 0px 600px;
+    }
+    #b{
+        color:white;
+        margin:  0px 0px 0px 550px;
+    }
+    #c{
+        background-color: rgb(33, 201, 201);
+    }
+    #d{
+        background-color:rgb(247, 58, 58);
+    }
+    #dep,#wid{
+        color: white    ;
+        text-align: right;
+    }
+    .a1{
+        margin:  50px 0px 0px 500px;
+        font-weight: bolder;
+    }
+
+    input,select{
+        height: 30px;
+    }
+    #a2{
+        width: 200px;
+    }
+
+    #a3{
+        width: 80px;
+    }
+
+    .a2{
+       
+        margin:  30px 0px 0px 400px;
+      
+    }
+    
+    #depdesc{
+        color: aqua;
+    
+        
+        margin:  0px 0px  0px 300px;
+        border:0px;
+    }
+    
+     #wddesc{
+        color: red;
+    
+         margin:0px  0px  0px 400px;
+         border:0px;
+    }
+        
+  
+    #dropdown{
+        margin:0px  0px  0px 400px;  
+    }
+    
+    #btn
+    {
+        background: url('submit.png');
+    }
+    
+    #btn:hover
+    {
+        background-image: url('submit.png');
+    }
+   
+</style>
+
+</head>
+<body>
+<h1>Welcome to ABC Bank</h1>
+
+<p id="b">Available balance in %Months%</p>
+<br>
+<p id="a">0000</p>
+ <br>
+
+<table  class="mq">
+<tr id="c">   <td>DEPOSIT</td> 
+<td id="dep"> 0000</td></tr>
+</table>
+<br>
+<table class="mq">
+<tr id="d" >   <td>WITHDRAWAL</td> 
+    <td id="wid"> 0000 </td></tr>
+</table>
+
+<table class="a1">
+
+<tr>
+    <td>CRN</td>
+    <td>:</td>
+    <td>457921547965</td>
+</tr>
+
+
+<tr>
+        <td>Account Holder Name</td>
+        <td>:</td>
+        <td>Sharanya</td> 
+</tr>
+
+
+<tr>
+        <td>Account Number</td>
+        <td>:</td>
+        <td>5479613259</td>
+</tr>
+
+
+</table>
+  
+
+        <select name="dropdown" id="dropdown">
+      
+        <option>SELECT</option>
+        <option value="DEPOSIT" >DEPOSIT</option>
+        <option value="WITHDRAW" >WITHDRAW</option>
+    </select>
+
+    <input id="a2" type="text" name ="desc" placeholder="Add Description">
+
+    <input id="a3" type="text" name="value" placeholder="Value">
+
+    <input name="submit" type="image" src="submit.png" id="btn">
+
+    <br>
+    <br>
+    
+         <button id="depdesc"  value="DEPOSIT">DEPOSIT</button>
+
+         
+         <button id="wddesc" value="WITHDRAWAL">WITHDRAWAL</button>
+         
+      
+         <form id="depositdescription">
+            <ul >
+
+            </ul>
+         </form>
+    
+         <form id="withdrawdescription">
+            <ul >
+
+            </ul>
+         </form>
+    
+</body> 
+
+<script src="banktransactionABC.js">
+    </script> 
+    
+
+</html>
